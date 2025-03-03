@@ -10,7 +10,6 @@ import {
 } from '@nestjs/common';
 import { TaskService } from './task.service';
 import { TaskDto } from './dto/task-dto/task-dto';
-
 @Controller('task')
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
@@ -19,6 +18,7 @@ export class TaskController {
     // return { page, limit };
     return this.taskService.getAllTask(Number(page), Number(limit));
   }
+
   @Get('id/:id')
   getTaskById(@Param('id') id: string) {
     return this.taskService.getTaskById(id);
