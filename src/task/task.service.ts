@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { NOMEM } from 'dns';
-import { TaskDto } from 'src/dto/cat.dto/cat.dto';
 import { PrismaService } from 'src/prisma/prisma.service';
+import { TaskDto } from './dto/task-dto/task-dto';
 
 @Injectable()
 export class TaskService {

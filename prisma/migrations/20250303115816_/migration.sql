@@ -7,6 +7,7 @@ CREATE TABLE `task` (
     `doDateTask` DATETIME(3) NULL,
     `updateTaskTime` DATETIME(3) NULL,
     `deleteTaskTime` DATETIME(3) NULL,
+    `taskDescription` VARCHAR(191) NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
